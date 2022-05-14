@@ -90,9 +90,11 @@ ul li {
     height: calc(100vh - 100px);
 }
 
+
+
 /* CAJITA IMAGEN DE FONDO */
 
-.cajaPrincipal {
+/* .cajaPrincipal {
     border-top: 2px solid #FFC8DD;
     border-radius: 20px;
     height: 50px;
@@ -116,7 +118,9 @@ ul li {
     opacity: 90%;
 
     max-width: 90%;
-}
+} */
+
+/*Ya no quiero que se vea porque la idea es poner un carrusel de imagenes*/
 
 
 /* CAJITAS */
@@ -164,6 +168,7 @@ a {
 }
 
 .cajita {
+    background-image: linear-gradient(to top, #FFFF, #b2f7ef);
     margin: 20px;
     padding: 20px;
     border: 1px solid #40916c;
@@ -650,4 +655,43 @@ footer {
 
     .aContacto {
         display: none;
+    }
+
+
+    /* ANIMACIONES Y TRANSICIONES */
+
+    @keyframes texto {
+        0% {
+            opacity: 0;
+        }
+    
+        100% {
+            opacity: 100;
+        }
+    }
+    
+    h1 {
+        animation-name: texto;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+
+    .imagenFondo:hover {
+        background-size: cover;
+        height: calc(100vh - 100px);
+        filter: grayscale(70%);
+    }
+
+    /*Agrego logo wpp*/
+
+    .botonWhatsApp img {
+        width: 50px;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .funda:hover {
+        filter: grayscale(70%);
     }
