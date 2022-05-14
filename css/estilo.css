@@ -1,0 +1,653 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* ESTILOS AL BODY */
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-image: url(https://fondosmil.com/fondo/10949.png);
+    color: #e29578
+}
+
+h1 {
+    color: #FF4089;
+    font-size: 3rem;
+}
+
+h2 {
+    color: #FF4089;
+}
+
+
+/*****ESTILO PÁGINA INDEX *****
+
+/***** HEADER *****/
+.imagenLogo {
+    width: 100px;
+    height: 100px;
+    border: #FF4089 2px solid;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    background-color: #fae1dd;
+    border-top: #e29578 solid 2px;
+    border-bottom: #e29578 solid 2px;
+    margin: auto;
+    padding: 0px;
+
+}
+
+.cajaHeader {
+    background-image: linear-gradient(to top, #f2b5d4, #f7d6e0);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #e4c1f9;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+    justify-content: center;
+    padding: 2px 5px;
+    font-size: 20px;
+}
+
+ul li {
+    padding: 2px 5px;
+    max-width: 100%;
+}
+
+.cajaHeaderNav {
+    background-image: linear-gradient(to top, #f2b5d4, #f7d6e0);
+    border: 1px solid #b56576;
+}
+
+/* IMAGEN DE FONDO */
+
+.imagenFondo {
+    background-image: url(https://cf.shopee.com.my/file/9e94bea588baa3f05a4cb49ef64a8bde);
+    background-size: cover;
+    height: calc(100vh - 100px);
+}
+
+/* CAJITA IMAGEN DE FONDO */
+
+.cajaPrincipal {
+    border-top: 2px solid #FFC8DD;
+    border-radius: 20px;
+    height: 50px;
+    width: 200px;
+    margin: 5px;
+    color: #ff85a1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    background-color: #f9bec7;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 2px 2px 2px;
+    opacity: 90%;
+
+    max-width: 90%;
+}
+
+
+/* CAJITAS */
+
+.menuPrincipal {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #7b2cbf;
+}
+
+.itemMenuPrincipal {
+    background-color: #e4c1f9;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #7b2cbf;
+    border-radius: 50px;
+    box-shadow: 3px 3px 10px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #FF4089;
+}
+
+.tituloCajita {
+    color: #43aa8b;
+}
+
+/* SERVICIOS */
+
+.servicios {
+    background-color: #b2f7ef;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #43aa8b;
+    border: #40916c 2px solid;
+
+}
+
+.cajita {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #40916c;
+    border-radius: 50px;
+    box-shadow: 3px 3px 10px;
+    text-align: center;
+}
+
+/*** UBICACIÓN *****/
+
+.ubicacion {
+    background-color: #ffd670;
+    border: #ff9770 2px solid;
+    color: #ff9770;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.mapa {
+    margin: 20px;
+    padding: 20px;
+}
+
+/***** NEWSLETTER *****/
+
+.cajaNewsletter {
+    background-color: #93b7be;
+    margin: 20px;
+    padding: 20px;
+    border: #004346 solid 2px;
+    border-radius: 1000px;
+    box-shadow: 2px 2px 2px;
+}
+
+.itemNewsletter {
+    color: #004346;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+
+
+/****** CONTACTANOS ******/
+
+.contactanos {
+    background-color: #ffe5d9;
+    border: 2px solid #f28482;
+    width: auto;
+    display: flex;
+    flex-direction: inline;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.cajitaContacto {
+    background-color: #f5cac3;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #f28482;
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cajitaContacto p {
+    color: #FF4089;
+    display: flex;
+    align-items: center;
+}
+
+
+.tituloContacto {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f28482;
+}
+
+ul li {
+    list-style-type: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+}
+
+
+
+/**** FOOTER  ****/
+footer {
+    height: 40px;
+    width: 100%;
+    background-color: #fff;
+    border-top: #444444 2px solid;
+    background-color: #cbc0d3;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/** ESTILO PÁGINA UBICACIÓN **/
+
+
+.cajaUbicacion {
+    background-color: #ffd670;
+    border: #ff9770 2px solid;
+    color: #ff9770;
+}
+
+.mapaDos {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.tituloUbicacion {
+    color: #f28482;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.direcUbic {
+    color: #f28482;
+    text-align: center;
+}
+
+/** ESTILO PÁGINA DESTACADOS **/
+
+.destacados {
+    background-image: linear-gradient(to top, #b9fbc0, #43aa8b);
+    border: #004346 2px solid;
+    padding: 20px;
+}
+
+.tituloUnoDestacados {
+    color: #344e41;
+    text-align: center;
+    padding: 10px;
+}
+
+.tituloDosDestacados {
+    color: #004346;
+    text-align: center;
+}
+
+.fundaBrillo {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 20px 20px;
+    border: #004346 solid 1px;
+}
+
+/**** ESTILO PÁGINA FUNDAS****/
+
+.fundas {
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to top, #f3c4fb, #deaaff);
+
+}
+
+.tituloFundas {
+    color: #7b2cbf;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.tituloFundasIndividual {
+    color: #7b2cbf;
+    text-align: center;
+}
+
+.funda {
+    height: 300px;
+    width: 300px;
+    border: #7b2cbf 1px solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+/****** ESTILO PÁGINA CONTACTO*****/
+
+.formulario {
+    background-image: linear-gradient(to top, #d1b3c4, #b392ac);
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tituloFormulario {
+    color: #7209b7;
+
+    display: flex;
+    text-align: start;
+    font-size: 2rem;
+}
+
+.parrafoForm {
+    color: #7209b7;
+}
+
+legend {
+    color: #7209b7;
+    font-size: 1rem;
+}
+
+label {
+    color: #7209b7;
+    font-size: 1rem;
+}
+
+
+
+/* APLICO GRID */
+
+
+header {
+    grid-area: header;
+}
+
+.cajaHeaderNav {
+    grid-area: nav;
+}
+
+.imagenFondo {
+    grid-area: imagenCentral;
+}
+
+.menuPrincipal {
+    grid-area: menuP;
+}
+
+.servicios {
+    grid-area: servicios;
+}
+
+.ubicacion {
+    grid-area: ubicacion;
+}
+
+.cajaNewsletter {
+    grid-area: newsletter;
+}
+
+.contactanos {
+    grid-area: contactanos;
+}
+
+
+footer {
+    grid-area: footer;
+}
+
+/* Aplico grid para darle forma a las imagenes */
+
+
+.fundas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    grid-template-areas: 
+    "funda"
+    "funda"
+    "funda";
+    text-align: center;
+    margin-top: 5px;
+    border: 1px solid #7209b7;
+}
+
+.funda {
+    grid-area: funda;
+}
+
+
+
+/* MEDIA QUERIES VISTA MOVIL (INDEX) */
+
+@media(max-width:700px) {
+
+    .padreGrid {
+        display: grid;
+        grid-auto-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 5px;
+        grid-template-areas:
+            "header header header header header"
+            "nav nav nav nav nav"
+            "imagenCentral imagenCentral imagenCentral imagenCentral imagenCentral"
+            "imagenCentral imagenCentral imagenCentral imagenCentral imagenCentral"
+            "imagenCentral imagenCentral imagenCentral imagenCentral imagenCentral"
+            "imagenCentral imagenCentral imagenCentral imagenCentral imagenCentral"
+            "menuP menuP menuP menuP menuP"
+            "servicios servicios servicios servicios servicios"
+            "contactanos contactanos contactanos contactanos contactanos"
+            "newsletter newsletter newsletter newsletter newsletter"
+            "footer footer footer footer footer";
+    }
+
+    .menuPrincipal {
+        flex-wrap: wrap;
+    }
+
+    .encabezado {
+        flex-wrap: wrap;
+    }
+
+    ul {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .aContacto {
+        display: none;
+    }
+
+    .servicios {
+        flex-wrap: wrap;
+    }
+
+    .cajaNewsletter {
+        flex-wrap: wrap;
+    }
+
+    .contactanos {
+        flex-wrap: wrap;
+    }
+
+    .cajaPrincipal {
+        display: none;
+    }
+
+    .ubicacion {
+        display: none;
+    }
+
+}
+
+/* APLICO GRID PÁGINA CONTACTO */
+
+/* MEDIA QUERIES VISTA MOVIL */
+
+@media(min-width:300px) and (max-width:700px) {
+    .padreGridContacto {
+        display: grid;
+        grid-auto-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 5px;
+        grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "formulario formulario formulario formulario"
+            "formulario formulario formulario formulario"
+            "newsletter newsletter newsletter newsletter"
+            "newsletter newsletter newsletter newsletter"
+            "contactanos contactanos contactanos contactanos"
+            "footer footer footer footer"
+        ;
+    }
+
+
+    .formulario {
+        flex-wrap: wrap;
+        grid-area: formulario;
+    }
+}
+
+/* APLICO GRID PÁGINA UBICACION */
+
+/* MEDIA QUERIES VISTA MOVIL */
+
+@media(min-width:300px) and (max-width:700px) {
+    .padreGridUbicacion {
+        display: grid;
+        grid-auto-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 5px;
+        grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "ubicacionDos ubicacionDos ubicacionDos ubicacionDos"
+            "newsletter newsletter newsletter newsletter"
+            "contactanos contactanos contactanos contactanos"
+            "footer footer footer footer"
+        ;
+    }
+
+    .aContacto {
+        display: none;
+    }
+
+    .cajaUbicacion {
+        grid-area: ubicacionDos;
+        max-width: 100%;
+    }
+
+    .mapaDos {
+        max-width: 100%;
+    }
+
+}
+
+
+/* APLICO GRID PÁGINA DESTACADOS */
+
+/* MEDIA QUERIES VISTA MOVIL */
+
+@media(min-width:300px) and (max-width:700px) {
+    .padreGridDestacados {
+        display: grid;
+        grid-auto-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 5px;
+        grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "destacados destacados destacados destacados"
+            "newsletter newsletter newsletter newsletter"
+            "contactanos contactanos contactanos contactanos"
+            "footer footer footer footer"
+        ;
+    }
+
+    .destacados {
+        grid-area: destacados;
+    }
+
+    .aContacto {
+        display: none;
+    }
+
+}
+
+
+/* APLICO GRID PÁGINA FUNDAS */
+
+/* MEDIA QUERIES VISTA MOVIL */
+
+@media(min-width:300px) and (max-width:700px) {
+    .padreGridFundas {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+        grid-template-areas:
+            "header"
+            "nav"
+            "fundas"
+            "newsletter"
+            "contactanos"
+            "footer"
+        ; }
+    }
+
+    .aContacto {
+        display: none;
+    }
