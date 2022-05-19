@@ -50,7 +50,7 @@ h2 {
 
 }
 
-.cajaHeader {
+/* .cajaHeader {
     background-image: linear-gradient(to top, #f2b5d4, #f7d6e0);
     margin: 10px;
     padding: 5px;
@@ -60,7 +60,7 @@ h2 {
     display: flex;
     justify-content: center;
     text-align: center;
-}
+} */
 
 
 
@@ -87,11 +87,11 @@ ul li {
 
 /* IMAGEN DE FONDO */
 
-.imagenFondo {
+/* .imagenFondo {
     background-image: url(https://cf.shopee.com.my/file/9e94bea588baa3f05a4cb49ef64a8bde);
     background-size: cover;
     height: calc(100vh - 100px);
-}
+} */
 
 
 
@@ -580,6 +580,9 @@ footer {
         flex-wrap: wrap;
         grid-area: formulario;
     }
+
+
+
 }
 
 /* APLICO GRID PÁGINA UBICACION */
@@ -719,7 +722,6 @@ footer {
 
 .navbarCss {
     background-color: #fae1dd;
-
 }
 
 
