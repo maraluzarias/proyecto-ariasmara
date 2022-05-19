@@ -11,13 +11,16 @@ body {
     color: #e29578
 }
 
+
 h1 {
     color: #FF4089;
-    font-size: 3rem;
+    font-size: 2rem;
+    text-align: center;
 }
 
 h2 {
     color: #FF4089;
+    font-size: 2rem;
 }
 
 
@@ -50,7 +53,7 @@ h2 {
 .cajaHeader {
     background-image: linear-gradient(to top, #f2b5d4, #f7d6e0);
     margin: 10px;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #e4c1f9;
     border-radius: 20px;
     box-shadow: 3px 3px 10px;
@@ -201,7 +204,7 @@ a {
     margin: 20px;
     padding: 20px;
     border: #004346 solid 2px;
-    border-radius: 1000px;
+    border-radius: 50px;
     box-shadow: 2px 2px 2px;
 }
 
@@ -211,6 +214,11 @@ a {
     justify-content: center;
     font-size: 20px;
 }
+
+.suscribite {
+    width: 50%;
+}
+
 
 
 
@@ -248,6 +256,10 @@ a {
 .tituloContacto {
     font-size: 2rem;
     text-decoration: underline;
+}
+
+.tituloContactoDos {
+    text-align: center;
 }
 
 .item {
@@ -459,10 +471,10 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 10px;
-    grid-template-areas: 
-    "funda"
-    "funda"
-    "funda";
+    grid-template-areas:
+        "funda"
+        "funda"
+        "funda";
     text-align: center;
     margin-top: 5px;
     border: 1px solid #7209b7;
@@ -486,10 +498,7 @@ footer {
         grid-template-areas:
             "header header header header header"
             "nav nav nav nav nav"
-            "imagenCentral imagenCentral imagenCentral imagenCentral imagenCentral"
-            "imagenCentral imagenCentral imagenCentral imagenCentral imagenCentral"
-            "imagenCentral imagenCentral imagenCentral imagenCentral imagenCentral"
-            "imagenCentral imagenCentral imagenCentral imagenCentral imagenCentral"
+            "menuP menuP menuP menuP menuP"
             "menuP menuP menuP menuP menuP"
             "servicios servicios servicios servicios servicios"
             "contactanos contactanos contactanos contactanos contactanos"
@@ -535,6 +544,13 @@ footer {
         display: none;
     }
 
+    .carrusel {
+        display: none;
+    }
+
+    .menuPrincipal {
+        padding: 0%;
+    }
 }
 
 /* APLICO GRID PÁGINA CONTACTO */
@@ -650,27 +666,28 @@ footer {
             "newsletter"
             "contactanos"
             "footer"
-        ; }
+        ;
+    }
+}
+
+.aContacto {
+    display: none;
+}
+
+
+/* ANIMACIONES Y TRANSICIONES */
+
+@keyframes texto {
+    0% {
+        opacity: 0;
     }
 
-    .aContacto {
-        display: none;
+    100% {
+        opacity: 100;
     }
+}
 
-
-    /* ANIMACIONES Y TRANSICIONES */
-
-    @keyframes texto {
-        0% {
-            opacity: 0;
-        }
-    
-        100% {
-            opacity: 100;
-        }
-    }
-    
-    h1 {
+/* h1 {
         animation-name: texto;
         animation-duration: 5s;
         animation-iteration-count: infinite;
@@ -681,17 +698,70 @@ footer {
         background-size: cover;
         height: calc(100vh - 100px);
         filter: grayscale(70%);
-    }
+    } */
 
-    /*Agrego logo wpp*/
 
-    .botonWhatsApp img {
-        width: 50px;
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-    }
+/*Agrego logo wpp*/
 
-    .funda:hover {
-        filter: grayscale(70%);
-    }
+.botonWhatsApp img {
+    width: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.funda:hover {
+    filter: grayscale(30%);
+}
+
+
+/* Maquetando bootstrap */
+
+.navbarCss {
+    background-color: #fae1dd;
+
+}
+
+
+.nav-item {
+    color: #b56576;
+}
+
+.textoNav {
+    color: #FF4089 !important;
+}
+
+.carrusel:hover {
+    filter: grayscale(70%);
+}
+
+.navSearch {
+    background-color: #fae1dd;
+}
+
+.botonSearch {
+    background-color: #f7d6e0;
+}
+
+.botonSearch:hover {
+    background-color: #fae1dd;
+    border: 1px solid #ff4089;
+}
+
+.textoSearch {
+    color: #FF4089;
+}
+
+.labelSearch {
+    border: 1px solid #ff4089;
+
+}
+
+.dropdownClass {
+    background-color: #b56576;
+    border: 1px solid #ff4089;
+}
+
+.dropdownClass:hover {
+    background-color: #fae1dd;
+}
