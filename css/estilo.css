@@ -7,8 +7,9 @@
 
 body {
     font-family: 'Nunito', sans-serif;
-    background-image: url(https://fondosmil.com/fondo/10949.png);
-    color: #e29578
+    /* background-image: url(https://fondosmil.com/fondo/10949.png);
+    color: #e29578 */
+    background-color: #fff0f3;
 }
 
 
@@ -16,6 +17,7 @@ h1 {
     color: #FF4089;
     font-size: 2rem;
     text-align: center;
+    font-weight: bold;
 }
 
 h2 {
@@ -75,55 +77,15 @@ ul {
     font-size: 20px;
 }
 
-ul li {
+/* ul li {
     padding: 2px 5px;
     max-width: 100%;
-}
+} */
 
 .cajaHeaderNav {
     background-image: linear-gradient(to top, #f2b5d4, #f7d6e0);
     border: 1px solid #b56576;
 }
-
-/* IMAGEN DE FONDO */
-
-/* .imagenFondo {
-    background-image: url(https://cf.shopee.com.my/file/9e94bea588baa3f05a4cb49ef64a8bde);
-    background-size: cover;
-    height: calc(100vh - 100px);
-} */
-
-
-
-/* CAJITA IMAGEN DE FONDO */
-
-/* .cajaPrincipal {
-    border-top: 2px solid #FFC8DD;
-    border-radius: 20px;
-    height: 50px;
-    width: 200px;
-    margin: 5px;
-    color: #ff85a1;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-
-    background-color: #f9bec7;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    box-shadow: 2px 2px 2px;
-    opacity: 90%;
-
-    max-width: 90%;
-} */
-
-/*Ya no quiero que se vea porque la idea es poner un carrusel de imagenes*/
 
 
 /* CAJITAS */
@@ -145,6 +107,7 @@ ul li {
     border-radius: 50px;
     box-shadow: 3px 3px 10px;
     text-align: center;
+    font-size: 20px;
 }
 
 a {
@@ -226,7 +189,7 @@ a {
 
 .contactanos {
     background-color: #ffe5d9;
-    border: 2px solid #f28482;
+    /* border: 2px solid #f28482; */
     width: auto;
     display: flex;
     flex-direction: inline;
@@ -239,28 +202,36 @@ a {
     background-color: #f5cac3;
     margin: 20px;
     padding: 20px;
-    border: 1px solid #f28482;
+    /* border: 1px solid #f28482; */
     border-radius: 4px;
     box-shadow: 3px 3px 10px;
     display: flex;
     flex-direction: column;
 }
 
-.cajitaContacto p {
-    color: #FF4089;
+.menuContacto {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    font-size: 1rem;
+    margin: 0%;
+    padding: 0%;
 }
 
+.menuContactoDos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    margin: 0%;
+}
 
 .tituloContacto {
-    font-size: 2rem;
-    text-decoration: underline;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
-.tituloContactoDos {
-    text-align: center;
-}
+
 
 .item {
     margin-top: 10px;
@@ -766,4 +737,38 @@ footer {
 
 .dropdownClass:hover {
     background-color: #fae1dd;
+}
+
+.info {
+    border: 1px solid #ff4089;
+    background-color: #FFFF;
+}
+
+.tituloNav {
+    font-size: 1rem;
+    color: black;
+}
+
+.cases {
+    border: 3px solid #b56576;
+    width: auto;
+}
+
+.tituloCases {
+    font-weight: bold;
+}
+
+.text6 {
+    font-size: 1rem;
+}
+
+.botonModal {
+    background-color: #f2b5d4;
+    border: 1px solid #b56576;
+    font-size: 1rem;
+}
+
+.categorias {
+    display: flex;
+    flex-direction: column;
 }
