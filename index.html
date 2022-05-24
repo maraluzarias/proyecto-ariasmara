@@ -38,7 +38,7 @@
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link textoNav active" aria-current="page"
-                                href="pages/destacados.html">Destacados</a>
+                                href="pages/destacados.html">Productos destacados</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link textoNav" href="pages/ubicacion.html">Ubicación</a>
@@ -54,7 +54,7 @@
             </div>
         </nav>
 
-        <nav class="navbar  navSearch">
+        <nav class="navbar navSearch">
             <div class="container-fluid">
                 <a class="navbar-brand textoSearch"></a>
                 <form class="d-flex" role="search">
@@ -86,7 +86,7 @@
 
     <!-- Carrusel -->
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div id="carouselExampleIndicators" class="carousel slide carrusel" data-bs-ride="true">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -141,17 +141,19 @@
 
     </section>
 
+    <!-- Cajitas con imágenes -->
 
-    <div class="row container-fluid">
+
+    <div class="row container-fluid cajitasConImagenes">
         <div class="col-12 text-center">
             <h3 class="tituloCases">Destacados</h3>
         </div>
-        <div class="col-lg-4 col-sm-12"><a href="#"><img class="img-fluid mx-auto d-block rounded text-center cases"
+        <div class="col-lg-4"><a href="#"><img class="img-fluid mx-auto d-block rounded text-center cases"
                     src="img/case1.jpg" alt=""></a>
             <h4 class="text-center mt-3">$1050</h4>
             <h4 class="text-center mt-3 text6">6 cuotas sin interés de $175</h4>
             <!-- Bptón modal -->
-            <button type="button" class="botonModal btn col-lg-4 col-sm-12 mx-auto d-block" data-bs-toggle="modal"
+            <button type="button" class="botonModal btn col-lg-4 mx-auto d-block mb-2" data-bs-toggle="modal"
                 data-bs-target="#exampleModal">
                 Agregar al carrito
             </button>
@@ -177,12 +179,12 @@
             </div>
         </div>
 
-        <div class="col-lg-4 col-sm-12"><a href="#"><img class="img-fluid mx-auto d-block rounded text-center cases"
+        <div class="col-lg-4"><a href="#"><img class="img-fluid mx-auto d-block rounded text-center cases"
                     src="img/case2.jpg" alt=""></a>
             <h4 class="text-center mt-3">$1050</h4>
             <h4 class="text-center mt-3 text6">6 cuotas sin interés de $175</h4>
             <!-- Bptón modal -->
-            <button type="button" class="botonModal btn col-lg-4 col-sm-12 mx-auto d-block" data-bs-toggle="modal"
+            <button type="button" class="botonModal btn col-lg-4 mx-auto d-block mb-2" data-bs-toggle="modal"
                 data-bs-target="#exampleModal">
                 Agregar al carrito
             </button>
@@ -207,12 +209,12 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-sm-12"><a href="#"><img class="img-fluid mx-auto d-block rounded text-center cases"
+        <div class="col-lg-4"><a href="#"><img class="img-fluid mx-auto d-block rounded text-center cases"
                     src="img/case3.jpg" alt=""></a>
             <h4 class="text-center mt-3">$1050</h4>
             <h4 class="text-center mt-3 text6">6 cuotas sin interés de $175</h4>
             <!-- Bptón modal -->
-            <button type="button" class="botonModal btn col-lg-4 col-sm-12 mx-auto d-block" data-bs-toggle="modal"
+            <button type="button" class="botonModal btn col-lg-4 mx-auto d-block mb-2" data-bs-toggle="modal"
                 data-bs-target="#exampleModal">
                 Agregar al carrito
             </button>
@@ -273,7 +275,7 @@
     <section class="ubicacion">
         <div>
             <h2 class="tituloUbicacion">Donde estamos ubicados?</h2>
-            <p>Estamos en Villa Ortuzar, CABA! Consultanos dirección por privado</p>
+            <p class="parrafoUbicacion">Estamos en Obelisco, CABA! Consultanos dirección por privado</p>
             <div class="mapa"><iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.00196323258!2d-58.413043884591794!3d-34.604111865026326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8c901cefa7%3A0x2bf1c86478d6f525!2sObelisco!5e0!3m2!1ses-419!2sar!4v1650333594756!5m2!1ses-419!2sar"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -287,9 +289,9 @@
 
     <div class="cajaNewsletter">
         <p class="caja itemNewsletter">Suscribite a nuestro Newsletter y conocé todas las novedades!</p>
-        <form class="form-floating">
-            <input type="email" class="form-control" id="floatingInputValue" placeholder="nombre@ejemplo.com" value="">
-            <label for="floatingInputValue">Ingresá tu mail</label>
+        <form class="caja itemNewsletter">
+            <label for="Suscribite"></label>
+            <input id="Suscribite" type="text" placeholder="Ingresá tu mail">
             <input type="submit">
             <input type="reset" value="Borrar" name="" id="">
         </form>
@@ -297,25 +299,22 @@
 
     </div>
 
-
-
-
     <!-- CONTACTANOS -->
 
     <section class="contactanos container-fluid">
-    
-        <div class="cajitaContactoUno col-lg-4">
+
+        <div class="cajitaContactoUno col-lg-3 col-sm-6">
             <h2 class="tituloContacto mt-2">Menu</h2>
             <ul class="menuContacto">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/fundas.html">Fundas</a></li>
-                <li><a href="pages/destacados.html">Destacados</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
+                <li><a class="item" href="index.html">Inicio</a></li>
+                <li><a class="item" href="pages/fundas.html">Fundas</a></li>
+                <li><a class="item" href="pages/destacados.html">Destacados</a></li>
+                <li><a class="item" href="pages/contacto.html">Contacto</a></li>
             </ul>
 
         </div>
-        
-        <div class="col-lg-4">
+
+        <div class="col-lg-3 col-sm-6">
             <h2 class="tituloContacto">Contacto</h2>
             <ul class="menuContactoDos">
                 <li>Tel: 115678910</li>
@@ -324,23 +323,32 @@
             </ul>
         </div>
 
-        <div class="cajitaContactoUno col-lg-4">
+        <div class="cajitaContactoUno col-lg-3 col-sm-6">
             <h2 class="tituloContacto">Sigamos conectados</h2>
             <a class="caja item" href="http://www.instagram.com/shallow.cases" target="blank">Instagram</a>
             <a class="caja item" href="http://www.instagram.com/shallow.cases" target="blank">Facebook</a>
         </div>
 
+        <div class="cajitaContactoUno col-lg-3 col-sm-6">
+            <h2 class="tituloContacto">Ayuda</h2>
+            <a class="caja item" href="#">¿Cómo comprar?</a>
+            <a class="caja item" href="#">Dejanos tu sugerencia!</a>
+        </div>
 
 
     </section>
+
+    <!-- Botón whatsapp -->
 
     <div class="botonWhatsApp">
         <a href="#"><img src="img/logo-wasap.png" alt=""></a>
     </div>
 
+    <!-- Footer -->
+
     <footer>
 
-        <p>Shallow Cases <strong>Todos los derechos reservados</strong></p>
+        <p class="mt-2">Shallow Cases <strong>Todos los derechos reservados</strong></p>
 
     </footer>
 
