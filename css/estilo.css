@@ -135,7 +135,6 @@ a {
     margin: 10px;
     padding: 10px;
     border: #9999a1 solid 2px;
-    border-radius: 50px;
 }
 
 .itemNewsletter {
@@ -204,6 +203,11 @@ ul li {
     color: black;
     display: flex;
 }
+
+.logoUno {
+    width: 20px;
+}
+
 
 
 /**** FOOTER  ****/
