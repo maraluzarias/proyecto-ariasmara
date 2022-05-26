@@ -1,0 +1,22 @@
+h1 {
+	color: $color-texto;
+	font-size: 2rem;
+	text-align: center;
+	font-weight: bold;
+}
+.imagenLogo {
+	width: 100px;
+	height: 100px;
+	border: #FF4089 2px solid;
+	margin: 5px;
+	padding: 5px;
+}
+.encabezado {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	background-color: #fae1dd;
+	border-top: #e29578 solid 2px;
+	border-bottom: #e29578 solid 2px;
+}
