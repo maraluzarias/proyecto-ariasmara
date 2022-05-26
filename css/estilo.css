@@ -701,7 +701,8 @@ footer {
 }
 
 .cases {
-    border: 3px solid #b56576;
+    border: 3px solid #FF4089;
+    box-shadow: 2px 2px 2px;
 }
 
 .tituloCases {
