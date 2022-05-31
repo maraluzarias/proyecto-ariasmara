@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
-    <title>Fundas</title>
+    <title>Fundas para celulares</title>
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/estilo.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Fira+Sans+Condensed:wght@100;300;400&family=Nunito:wght@300;500&family=Roboto:ital,wght@1,100&display=swap"
         rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
 <body>
@@ -54,30 +54,30 @@
                         </ul>
                     </div>
                 </div>
-            </nav>
 
-            <nav class="navbar  navSearch">
-                <div class="container-fluid">
-                    <a class="navbar-brand textoSearch"></a>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2 labelSearch" type="search" placeholder="Que estás buscando?"
-                            aria-label="Search">
-                        <button class="btn btn-outline-success botonSearch textoSearch labelSearch"
-                            type="submit">Buscar</button>
-                    </form>
+
+                <nav class="navbar  navSearch">
+                    <div class="container-fluid">
+                        <div class="navbar-brand textoSearch"></div>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 labelSearch" type="search" placeholder="Que estás buscando?"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success botonSearch textoSearch labelSearch"
+                                type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </nav>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle dropdownClass" type="button"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Mi Cuenta</a></li>
+                        <li><a class="dropdown-item" href="#">Carrito</a></li>
+                    </ul>
                 </div>
-            </nav>
-
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle dropdownClass" type="button" id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Mi Cuenta</a></li>
-                    <li><a class="dropdown-item" href="#">Carrito</a></li>
-                </ul>
-            </div>
-            <!-- <div class="cajaHeader">
+                <!-- <div class="cajaHeader">
                 <h2>Envío gratis a todo el país - Hasta 6 cuotas sin interés</h2>
             </div>
             <div class="cajaHeader">
@@ -86,6 +86,7 @@
 
             <div class="cajaHeader"> <a href="#">Carrito</a>
             </div> -->
+            </nav>
         </header>
 
 

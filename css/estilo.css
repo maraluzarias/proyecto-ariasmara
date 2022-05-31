@@ -27,112 +27,10 @@ h1 {
   border-top: #e29578 solid 2px;
   border-bottom: #e29578 solid 2px; }
 
-footer {
-  height: auto;
-  width: 100%;
-  background-color: #fff;
-  border-top: #444444 2px solid;
-  background-color: #cbc0d3;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-area: footer; }
-
-* {
-  margin: 0%;
-  padding: 0%; }
-
-body {
-  font-family: 'Nunito', sans-serif;
-  background-color: #fff0f3; }
-
-h2 {
-  color: #FF4089;
-  font-size: 2rem; }
-
 .info {
   border: 1px solid #ff4089;
   background-color: #fff0f3;
   grid-area: info; }
-
-.menuPrincipal {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: #7b2cbf;
-  grid-area: menuP; }
-
-.itemMenuPrincipal {
-  background-color: #e4c1f9;
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #7b2cbf;
-  border-radius: 50px;
-  box-shadow: 3px 3px 10px;
-  text-align: center;
-  font-size: 20px; }
-
-a {
-  text-decoration: none;
-  color: #FF4089; }
-
-.tituloCajita {
-  color: #43aa8b; }
-
-.servicios {
-  background-color: #b2f7ef;
-  margin-top: 50px;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: #43aa8b;
-  border: #40916c 1px solid;
-  grid-area: servicios; }
-
-.cajita {
-  background-image: linear-gradient(to top, #FFFF, #b2f7ef);
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #40916c;
-  border-radius: 20px;
-  box-shadow: 3px 3px 10px;
-  text-align: center; }
-
-.ubicacion {
-  background-color: #ffd670;
-  color: #ff9770;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  grid-area: ubicacion; }
-
-.parrafoUbicacion {
-  font-weight: bold; }
-
-.mapa {
-  margin: 20px;
-  padding: 20px; }
-
-.cajaNewsletter {
-  background-color: #c0c0c0;
-  margin: 10px;
-  padding: 10px;
-  border: #9999a1 solid 2px;
-  grid-area: newsletter; }
-
-.itemNewsletter {
-  color: #696766;
-  display: flex;
-  justify-content: center;
-  font-size: 1rem;
-  text-align: center; }
-
-.suscribite {
-  width: 50%; }
 
 .contactanos {
   background-color: #ffe5d9;
@@ -179,6 +77,108 @@ ul li {
 
 .logoUno {
   width: 20px; }
+
+.menuPrincipal {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #7b2cbf;
+  grid-area: menuP; }
+
+.itemMenuPrincipal {
+  background-color: #e4c1f9;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #7b2cbf;
+  border-radius: 50px;
+  box-shadow: 3px 3px 10px;
+  text-align: center;
+  font-size: 20px; }
+
+a {
+  text-decoration: none;
+  color: #FF4089; }
+
+.tituloCajita {
+  color: #43aa8b; }
+
+.servicios {
+  background-color: #b2f7ef;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #43aa8b;
+  border: #40916c 1px solid;
+  grid-area: servicios; }
+
+.cajita {
+  background-image: linear-gradient(to top, #FFFF, #b2f7ef);
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #40916c;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px;
+  text-align: center; }
+
+footer {
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  border-top: #444444 2px solid;
+  background-color: #cbc0d3;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: footer; }
+
+* {
+  margin: 0%;
+  padding: 0%; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #fff0f3; }
+
+h2 {
+  color: #FF4089;
+  font-size: 2rem; }
+
+.ubicacion {
+  background-color: #ffd670;
+  color: #ff9770;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  grid-area: ubicacion; }
+
+.parrafoUbicacion {
+  font-weight: bold; }
+
+.mapa {
+  margin: 20px;
+  padding: 20px; }
+
+.cajaNewsletter {
+  background-color: #c0c0c0;
+  margin: 10px;
+  padding: 10px;
+  border: #9999a1 solid 2px;
+  grid-area: newsletter; }
+
+.itemNewsletter {
+  color: #696766;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  text-align: center; }
+
+.suscribite {
+  width: 50%; }
 
 .cajaUbicacion {
   background-color: #ffd670;
