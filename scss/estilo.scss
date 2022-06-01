@@ -8,6 +8,9 @@
 
 
 @import "variables";
+@import "extend";
+@import "mixin";
+@import "maps";
 @import "header";
 @import "contactanos";
 @import "menuindex";
@@ -33,6 +36,7 @@ h2 {
 	flex-direction: column;
 	justify-content: space-evenly;
 	grid-area: ubicacion;
+	width: 100%;
 }
 .parrafoUbicacion {
 	font-weight: bold;
@@ -250,7 +254,20 @@ header {
 		grid-auto-columns: 1fr 1fr 1fr 1fr 1fr;
 		grid-template-rows: auto;
 		gap: 5px;
-		grid-template-areas: "header header header header" "nav nav nav nav" "info info info info" "carrusel carrusel carrusel carrusel" "menuP menuP menuP menuP" "menuP menuP menuP menuP" "cajitasImg cajitasImg cajitasImg cajitasImg" "servicios servicios servicios servicios" "newsletter newsletter newsletter newsletter" "contactanos contactanos contactanos contactanos" "contactanos contactanos contactanos contactanos" "footer footer footer footer";
+		grid-template-areas: 
+		"header header header header" 
+		"nav nav nav nav"
+		"info info info info" 
+		"contenidoP contenidoP contenidoP contenidoP"
+		"carrusel carrusel carrusel carrusel" 
+		"menuP menuP menuP menuP" 
+		"menuP menuP menuP menuP" 
+		"cajitasImg cajitasImg cajitasImg cajitasImg" 
+		"servicios servicios servicios servicios" 
+		"newsletter newsletter newsletter newsletter" 
+		"contactanos contactanos contactanos contactanos" 
+		"contactanos contactanos contactanos contactanos" 
+		"footer footer footer footer";
 	}
 	.menuPrincipal {
 		flex-wrap: wrap;
@@ -279,6 +296,11 @@ header {
 	.carrusel {
 		grid-area: carrusel;
 	}
+}
+.contenidoPrincipal {
+	display: flex;
+	flex-wrap: wrap;
+	grid-area: contenidoP;
 }
 @media (min-width:300px) and (max-width:700px) {
 	.padreGridContacto {
@@ -314,7 +336,7 @@ header {
 		grid-auto-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: auto;
 		gap: 5px;
-		grid-template-areas: "header header header header" "nav nav nav nav" "info info info info" "destacados destacados destacados destacados" "newsletter newsletter newsletter newsletter" "contactanos contactanos contactanos contactanos" "footer footer footer footer";
+		grid-template-areas: "header header header header" "nav nav nav nav" "info info info info" "contenidoP contenidoP contenidoP contenidoP" "destacados destacados destacados destacados" "newsletter newsletter newsletter newsletter" "contactanos contactanos contactanos contactanos" "footer footer footer footer";
 	}
 	.destacados {
 		grid-area: destacados;

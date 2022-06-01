@@ -1,0 +1,18 @@
+/*MAPAS*/
+$redes: (facebook:#7209b7, instagram:#FF4089, twitter:#b56576);
+
+@each $redSocial, $colorRedSocial in $redes {
+    .#{$redSocial} {
+        color: $colorRedSocial;
+    }
+}
+
+/*MAP GET*/
+
+$estilo: (color:#FF4089,tamFuente:30px);
+
+.redes {
+    background-color: map-get($estilo,color);
+    font-size: map-get($estilo,tamFuente);
+    width: 100%;
+}

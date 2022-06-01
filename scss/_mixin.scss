@@ -1,0 +1,26 @@
+/*MIXIN ANIMACIÓN*/
+
+@mixin animate($animation,$duration,$method,$times){
+    animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($info){
+    @keyframes #{$info}{
+        @content;
+    }
+}
+
+.info{ 
+    @include keyframes(fade){
+       0%{
+       opacity: 0;
+       }
+      50%{
+       opacity: 0.5;
+       }
+      100%{
+       opacity: 1;
+      }
+     }
+   @include animate(fade, 3s, linear, 1000);
+ }

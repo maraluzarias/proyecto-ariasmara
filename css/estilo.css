@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*@keyframes "texto" {
 	0% {
 		opacity: 0;
@@ -5,6 +6,41 @@
 	100% {
 		opacity: 100;
 	}*/
+/*EXTEND*/
+.tituloCajita, .tituloCajitaExtend {
+  color: #43aa8b; }
+
+.tituloCajitaExtend {
+  font-size: 1rem; }
+
+/*MIXIN ANIMACIÓN*/
+.info {
+  animation: fade 3s linear 1000; }
+
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+/*MAPAS*/
+.facebook {
+  color: #7209b7; }
+
+.instagram {
+  color: #FF4089; }
+
+.twitter {
+  color: #b56576; }
+
+/*MAP GET*/
+.redes {
+  background-color: #FF4089;
+  font-size: 30px;
+  width: 100%; }
+
 h1 {
   color: #FF4089;
   font-size: 2rem;
@@ -30,7 +66,9 @@ h1 {
 .info {
   border: 1px solid #ff4089;
   background-color: #fff0f3;
-  grid-area: info; }
+  grid-area: info;
+  /*margin: 2px;*/
+  width: 100%; }
 
 .contactanos {
   background-color: #ffe5d9;
@@ -100,7 +138,7 @@ a {
   text-decoration: none;
   color: #FF4089; }
 
-.tituloCajita {
+.tituloCajita, .tituloCajitaExtend {
   color: #43aa8b; }
 
 .servicios {
@@ -154,7 +192,8 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  grid-area: ubicacion; }
+  grid-area: ubicacion;
+  width: 100%; }
 
 .parrafoUbicacion {
   font-weight: bold; }
@@ -363,7 +402,7 @@ header {
     grid-auto-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     gap: 5px;
-    grid-template-areas: "header header header header" "nav nav nav nav" "info info info info" "carrusel carrusel carrusel carrusel" "menuP menuP menuP menuP" "menuP menuP menuP menuP" "cajitasImg cajitasImg cajitasImg cajitasImg" "servicios servicios servicios servicios" "newsletter newsletter newsletter newsletter" "contactanos contactanos contactanos contactanos" "contactanos contactanos contactanos contactanos" "footer footer footer footer"; }
+    grid-template-areas: "header header header header"  "nav nav nav nav" "info info info info"  "contenidoP contenidoP contenidoP contenidoP" "carrusel carrusel carrusel carrusel"  "menuP menuP menuP menuP"  "menuP menuP menuP menuP"  "cajitasImg cajitasImg cajitasImg cajitasImg"  "servicios servicios servicios servicios"  "newsletter newsletter newsletter newsletter"  "contactanos contactanos contactanos contactanos"  "contactanos contactanos contactanos contactanos"  "footer footer footer footer"; }
   .menuPrincipal {
     flex-wrap: wrap; }
   .encabezado {
@@ -382,6 +421,11 @@ header {
     display: none; }
   .carrusel {
     grid-area: carrusel; } }
+
+.contenidoPrincipal {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: contenidoP; }
 
 @media (min-width: 300px) and (max-width: 700px) {
   .padreGridContacto {
@@ -411,7 +455,7 @@ header {
     grid-auto-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     gap: 5px;
-    grid-template-areas: "header header header header" "nav nav nav nav" "info info info info" "destacados destacados destacados destacados" "newsletter newsletter newsletter newsletter" "contactanos contactanos contactanos contactanos" "footer footer footer footer"; }
+    grid-template-areas: "header header header header" "nav nav nav nav" "info info info info" "contenidoP contenidoP contenidoP contenidoP" "destacados destacados destacados destacados" "newsletter newsletter newsletter newsletter" "contactanos contactanos contactanos contactanos" "footer footer footer footer"; }
   .destacados {
     grid-area: destacados; }
   .padreGridFundas {
