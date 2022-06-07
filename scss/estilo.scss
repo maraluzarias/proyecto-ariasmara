@@ -1,16 +1,6 @@
-/*@keyframes "texto" {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 100;
-	}*/
-
-
 @import "variables";
 @import "extend";
 @import "mixin";
-@import "maps";
 @import "header";
 @import "contactanos";
 @import "menuindex";
@@ -28,217 +18,29 @@ h2 {
 	color: $color-texto;
 	font-size: 2rem;
 }
-.ubicacion {
-	background-color: #ffd670;
-	color: #ff9770;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	grid-area: ubicacion;
-	width: 100%;
-}
-.parrafoUbicacion {
-	font-weight: bold;
-}
-.mapa {
-	margin: 20px;
-	padding: 20px;
-}
-.cajaNewsletter {
-	background-color: #c0c0c0;
-	margin: 10px;
-	padding: 10px;
-	border: #9999a1 solid 2px;
-	grid-area: newsletter;
-}
-.itemNewsletter {
-	color: #696766;
-	display: flex;
-	justify-content: center;
-	font-size: 1rem;
-	text-align: center;
-}
-.suscribite {
-	width: 50%;
-}
-
-.cajaUbicacion {
-	background-color: #ffd670;
-	border: #ff9770 2px solid;
-	color: #ff9770;
-}
-.mapaDos {
-	display: flex;
-	justify-content: center;
-	margin: 20px;
-}
-.tituloUbicacion {
-	color: #f28482;
-	text-align: center;
-	margin-top: 5px;
-	margin-bottom: 10px;
-	font-weight: bold;
-}
-.direcUbic {
-	color: #f28482;
-	text-align: center;
-}
 .destacados {
 	background-color: #dec0f1;
 	padding: 20px;
 }
-.tituloUnoDestacados {
-	color: #7209b7;
-	text-align: center;
-	padding: 10px;
-}
-.tituloDosDestacados {
-	color: #7b2cbf;
-	text-align: center;
-}
-.casesDos {
-	border: 3px solid black;
-	width: auto;
-	box-shadow: 1px 1px 1px;
-}
-.fundas {
-	display: flex;
-	flex-direction: row;
-	background-image: linear-gradient(to top, #f3c4fb, #deaaff);
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto;
-	gap: 10px;
-	grid-template-areas: "funda" "funda" "funda";
-	text-align: center;
-	margin-top: 5px;
-	border: 1px solid #7209b7;
-}
-.tituloFundas {
-	color: #7b2cbf;
-	text-align: center;
-	margin: 20px;
-	padding: 20px;
-	font-size: 2rem;
-	text-decoration: underline;
-}
-.tituloFundasIndividual {
-	color: #7b2cbf;
-	text-align: center;
-}
-.funda {
-	height: 300px;
-	width: 300px;
-	border: #7b2cbf 1px solid;
-	margin: 10px;
-	padding: 10px;
-	grid-area: funda;
-	&:hover {
-		filter: grayscale(30%);
-	}
-}
-.formulario {
-	background-image: linear-gradient(to top, #d1b3c4, #b392ac);
-	height: 500px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	padding: 20px 20px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.tituloFormulario {
-	color: #7209b7;
-	display: flex;
-	text-align: start;
-	font-size: 2rem;
-}
-.parrafoForm {
-	color: #7209b7;
-}
-legend {
-	color: #7209b7;
-	font-size: 1rem;
-}
-label {
-	color: #7209b7;
-	font-size: 1rem;
-}
-header {
-	grid-area: header;
-}
-.navSearch {
-	grid-area: navSearch;
-	background-color: #fae1dd;
-}
-.dropdown {
-	grid-area: dropdown;
-}
-.navbarCss {
-	grid-area: navbarCss;
-	background-color: #fae1dd;
-	font-size: 25px;
-	text-align: center;
-}
-.cajitasConImagenes {
-	grid-area: cajitasImg;
-}
-.botonWhatsApp {
-	img {
-		width: 50px;
-		position: fixed;
-		bottom: 10px;
-		right: 10px;
-	}
-}
+/****Estilo página Index****/
 .cases {
 	&:hover {
 		filter: grayscale(50%);
 	}
-	border: 2px solid #FF4089;
+	border: 2px solid $color-texto;
 	box-shadow: 1px 1px 1px;
-}
-.nav-item {
-	color: #b56576;
-}
-.textoNav {
-	color: #FF4089 !important;
+	text-align: center;
 }
 .carrusel {
 	&:hover {
 		filter: grayscale(70%);
 	}
 }
-.botonSearch {
-	background-color: #f7d6e0;
-	&:hover {
-		background-color: #fae1dd;
-		border: 1px solid #ff4089;
-	}
-}
-.textoSearch {
-	color: $color-texto;
-}
-.labelSearch {
-	border: 1px solid #ff4089;
-}
-.dropdownClass {
-	background-color: #b56576;
-	border: 1px solid #ff4089;
-	&:hover {
-		background-color: #fae1dd;
-	}
-}
-.tituloNav {
-	font-size: 1rem;
-	color: black;
-	animation-name: texto;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
-}
 .tituloCases {
 	font-weight: bold;
+	&:hover {
+		color: $color-texto;
+	}
 }
 .text6 {
 	font-size: 1rem;
@@ -248,26 +50,254 @@ header {
 	border: 1px solid #b56576;
 	font-size: 1rem;
 }
+/****Estilos nav****/
+.tituloNav {
+	font-size: 1rem;
+	color: ff4089;
+	animation-name: texto;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+.botonSearch {
+	background-color: #f7d6e0;
+	&:hover {
+		background-color: #fae1dd;
+		border: 1px solid $color-texto;
+	}
+}
+.navSearch {
+	grid-area: navSearch;
+	background-color: #fae1dd;
+}
+.textoSearch {
+	color: $color-texto;
+}
+.labelSearch {
+	border: 1px solid $color-texto;
+}
+.nav-item {
+	color: #b56576;
+}
+.textoNav {
+	color: $color-texto;
+	&:hover {
+		color: $color-texto;
+	}
+}
+.navbarCss {
+	grid-area: navbarCss;
+	background-color: #fae1dd;
+	font-size: 20px;
+	text-align: center;
+}
+/****Estilos cards****/
+.cardStyle {
+	background-color: #fde2e4;
+	box-shadow: 2px 2px 2px #fde2e4;
+}
+.cardStyleDos {
+	background-color: #feeafa;
+	box-shadow: 2px 2px 2px #feeafa;
+}
+.tituloCard {
+	color: $color-texto;
+	text-align: center;
+}
+.leyendaCardIndex {
+	text-align: center;
+}
+.estiloLink {
+	&:hover {
+		color: $color-texto;
+	}
+}
+.fundasCard {
+	padding: 5px;
+}
+.imgFundas {
+	border: white 1px solid;
+
+	&:hover {
+		filter: grayscale(70%);
+		padding: 0px;
+		padding-right: 2.5px;
+		box-shadow: 0px 1px 1px 0px black;
+		border: solid 1px black;
+		border-radius: 5px 5px 5px 5px;
+		cursor: pointer;
+	}
+}
+/****Estilo newsletter****/
+.cajaNewsletter {
+	background-color: #f2b5d4;
+	margin: 20px;
+	padding: 10px;
+	border: black solid 1px;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 1px 1px 1px;
+	grid-area: newsletter;
+}
+.itemNewsletter {
+	color: black;
+	display: flex;
+	justify-content: center;
+	font-size: 1rem;
+	text-align: center;
+}
+.suscribite {
+	width: 50%;
+}
+/****Boton Whatsapp****/
+.botonWhatsApp {
+	img {
+		width: 50px;
+		position: fixed;
+		bottom: 10px;
+		right: 10px;
+	}
+}
+/****Estilo página contacto****/
+.item {
+	&:hover {
+		color: $color-texto;
+	}
+}
+.acordionItem {
+	background-color: #f2b5d4;
+	border-top: 1px solid $color-texto;
+}
+.acordionTxt {
+	color: #FF4089;
+	&:hover {
+		background-color: #f2b5d4;
+		color: $color-texto;
+	}
+}
+.botonInstagram {
+	background: #fff0f3;
+	margin: 5px;
+	padding: 5px;
+}
+.botonInsta {
+	background-color: #b56576;
+}
+.botonInstaDos {
+	display: flex;
+	justify-content: center;
+}
+.tituloBoton {
+	text-align: center;
+	color: $color-texto;
+}
+.cajaUbicacion {
+	background-color: #d1b3c4;
+	width: 100%;
+	margin: auto;
+	margin-bottom: 5px;
+}
+.mapaDos {
+	display: flex;
+	justify-content: center;
+	margin: 5px;
+}
+.tituloUbicacion {
+	color: $color-texto;
+	text-align: left;
+	margin: 5px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.direcUbic {
+	color: $color-texto;
+	text-align: left;
+	font-size: 20px;
+	margin: 5px;
+}
+.formulario {
+	background-color: #d1b3c4;
+	height: 500px;
+	margin-bottom: 10px;
+	padding: 20px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.tituloFormulario {
+	color: $color-texto;
+	display: flex;
+	text-align: start;
+	font-size: 2rem;
+}
+.parrafoForm {
+	color: black;
+}
+legend {
+	color: black;
+	font-size: 1rem;
+}
+label {
+	color: black;
+	font-size: 1rem;
+}
+/****Estilo Página Fundas****/
+.fundas {
+	background-color: #fff0f3;
+	text-align: center;
+	max-width: 100%;
+	grid-area: fundas;
+}
+.tituloFundas {
+	color: #fff0f3;
+	text-align: center;
+	margin: 20px;
+	padding: 20px;
+	font-size: 2rem;
+	text-decoration: underline;
+}
+.tituloFundasIndividual {
+	color: $color-texto;
+	text-align: center;
+	margin: 5px;
+}
+.botonFundas {
+	background-color: #fae1dd;
+	border: 1px solid #f28482;
+	color: black;
+	&:hover {
+		background-color: #fff0f3;
+		color: black;
+	}
+}
+/****Media Queries****/
+header {
+	grid-area: header;
+}
+.dropdown {
+	grid-area: dropdown;
+}
+.cajitasConImagenes {
+	grid-area: cajitasImg;
+}
 @media (max-width:700px) {
 	.padreGrid {
 		display: grid;
 		grid-auto-columns: 1fr 1fr 1fr 1fr 1fr;
 		grid-template-rows: auto;
-		gap: 5px;
-		grid-template-areas: 
-		"header header header header" 
-		"nav nav nav nav"
-		"info info info info" 
-		"contenidoP contenidoP contenidoP contenidoP"
-		"carrusel carrusel carrusel carrusel" 
-		"menuP menuP menuP menuP" 
-		"menuP menuP menuP menuP" 
-		"cajitasImg cajitasImg cajitasImg cajitasImg" 
-		"servicios servicios servicios servicios" 
-		"newsletter newsletter newsletter newsletter" 
-		"contactanos contactanos contactanos contactanos" 
-		"contactanos contactanos contactanos contactanos" 
-		"footer footer footer footer";
+		gap: 1px;
+		grid-template-areas:
+			"header header header header"
+			"nav nav nav nav"
+			"info info info info"
+			"contenidoP contenidoP contenidoP contenidoP"
+			"carrusel carrusel carrusel carrusel"
+			"menuP menuP menuP menuP"
+			"menuP menuP menuP menuP"
+			"cajitasImg cajitasImg cajitasImg cajitasImg"
+			"servicios servicios servicios servicios"
+			"newsletter newsletter newsletter newsletter"
+			"contactanos contactanos contactanos contactanos"
+			"contactanos contactanos contactanos contactanos"
+			"footer footer footer footer";
 	}
 	.menuPrincipal {
 		flex-wrap: wrap;
@@ -290,62 +320,94 @@ header {
 	.cajaPrincipal {
 		display: none;
 	}
-	.ubicacion {
-		display: none;
-	}
 	.carrusel {
 		grid-area: carrusel;
 	}
+	.info {
+		grid-area: info;
+	}
 }
 .contenidoPrincipal {
-	display: flex;
-	flex-wrap: wrap;
 	grid-area: contenidoP;
 }
 @media (min-width:300px) and (max-width:700px) {
 	.padreGridContacto {
 		display: grid;
-		grid-auto-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-auto-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: auto;
 		gap: 5px;
-		grid-template-areas: "header header header header" "nav nav nav nav" "formulario formulario formulario formulario" "formulario formulario formulario formulario" "newsletter newsletter newsletter newsletter" "newsletter newsletter newsletter newsletter" "contactanos contactanos contactanos contactanos" "footer footer footer footer";
+		grid-template-areas: 
+		"header header header header"
+		"nav nav nav nav"
+		"info info info info"
+		"formulario formulario formulario formulario"
+		"boton boton boton boton"
+		"acordion acordion acordion acordion"
+		"newsletter newsletter newsletter newsletter"
+		"newsletter newsletter newsletter newsletter"
+		"contactanos contactanos contactanos contactanos"
+		"footer footer footer footer";
 	}
 	.formulario {
 		flex-wrap: wrap;
 		grid-area: formulario;
 	}
-	.padreGridUbicacion {
-		display: grid;
-		grid-auto-columns: 1fr 1fr 1fr 1fr;
-		grid-template-rows: auto;
-		gap: 5px;
-		grid-template-areas: "header header header header" "nav nav nav nav" "ubicacionDos ubicacionDos ubicacionDos ubicacionDos" "newsletter newsletter newsletter newsletter" "contactanos contactanos contactanos contactanos" "footer footer footer footer";
-	}
-	.aContacto {
+	.cajaUbicacion {
 		display: none;
 	}
-	.cajaUbicacion {
-		grid-area: ubicacionDos;
-		max-width: 100%;
+	.acordionItem {
+		grid-area: acordion;
 	}
-	.mapaDos {
-		max-width: 100%;
+	.info {
+		grid-area: info;
+	}
+	.botonInstagram {
+		grid-area: boton;
 	}
 	.padreGridDestacados {
 		display: grid;
 		grid-auto-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: auto;
 		gap: 5px;
-		grid-template-areas: "header header header header" "nav nav nav nav" "info info info info" "contenidoP contenidoP contenidoP contenidoP" "destacados destacados destacados destacados" "newsletter newsletter newsletter newsletter" "contactanos contactanos contactanos contactanos" "footer footer footer footer";
+		grid-template-areas: "header header header header""nav nav nav nav""info info info info" "fundas fundas fundas fundas" "newsletter newsletter newsletter newsletter""contactanos contactanos contactanos contactanos""footer footer footer footer";
 	}
 	.destacados {
 		grid-area: destacados;
 	}
 	.padreGridFundas {
 		display: grid;
-		grid-auto-columns: 1fr;
+		grid-auto-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: auto;
 		gap: 10px;
-		grid-template-areas: "header" "nav" "fundas" "newsletter" "contactanos" "footer";
+		grid-template-areas:
+			"header header header header"
+			"nav nav nav nav"
+			"info info info info"
+			"fundas fundas fundas fundas"
+			"fundas fundas fundas fundas"
+			"fundas fundas fundas fundas"
+			"newsletter newsletter newsletter newsletter"
+			"contactanos contactanos contactanos contactanos"
+			"footer footer footer footer";
+	}
+
+	.padreGridAccesorios {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		gap: 10px;
+		grid-template-areas: 
+		"header header header header"
+		"nav nav nav nav"
+		"info info info info"
+		"accesorios accesorios accesorios accesorios"
+		"accesorios accesorios accesorios accesorios"
+		"newsletter newsletter newsletter newsletter"
+		"contactanos contactanos contactanos contactanos"
+		"footer footer footer footer";
+	}
+	.accesorios {
+		display: grid;
+		grid-area: accesorios;
 	}
 }

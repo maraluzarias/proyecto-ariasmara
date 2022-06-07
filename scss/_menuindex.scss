@@ -21,25 +21,24 @@ a {
 	color: $color-texto;
 }
 .tituloCajita {
-	color: #43aa8b;
+	color: black;
 }
 .servicios {
-	background-color: #b2f7ef;
+	background-color: #ffc8dd;
 	margin-top: 50px;
 	margin-bottom: 10px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	color: #43aa8b;
-	border: #40916c 1px solid;
+	color: black;
+	border: black 1px solid;
 	grid-area: servicios;
 }
 .cajita {
-	background-image: linear-gradient(to top, #FFFF, #b2f7ef);
 	margin: 20px;
 	padding: 20px;
-	border: 1px solid #40916c;
+	border: 1px solid black;
 	border-radius: 20px;
-	box-shadow: 3px 3px 10px;
+	box-shadow: 3px 3px 3px;
 	text-align: center;
 }

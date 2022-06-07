@@ -22,7 +22,7 @@
 <body class="padreGridContacto">
 
     <header class="encabezado">
-        <div>
+        <div class="logo">
             <a href="../index.html"><img class="imagenLogo" id="logo" src="../img/favicon.png" alt="Logo"></a>
         </div>
         <h1 class="tituloPrincipal">Shallow Cases</h1>
@@ -36,78 +36,61 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item ">
-                            <a class="nav-link textoNav active" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link textoNav" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link textoNav active" aria-current="page"
+                            <a class="nav-link textoNav" aria-current="page"
                                 href="../pages/destacados.html">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link textoNav" href="../pages/ubicacion.html">Ubicación</a>
+                            <a class="nav-link textoNav" href="../pages/accesorios.html">Accesorios</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link textoNav" href="../pages/fundas.html">Fundas</a>
-                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle textoNav" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Fundas</a>
+                            <ul class="dropdown-menu botonIndex" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item botonIndexDos" href="../pages/fundas.html">Iphone</a></li>
+                                <li><a class="dropdown-item botonIndexDos" href="../pages/fundas.html">Samsung</a></li>
+                                <li><a class="dropdown-item botonIndexDos" href="../pages/fundas.html">Motorola</a></li>
+
+                            </ul>
                         <li class="nav-item">
                             <a class="nav-link textoNav" href="../pages/contacto.html">Contacto</a>
                         </li>
-                    </ul>
+                        <li class="nav-item">
+                            <a class="nav-link textoNav" href="#">Carrito</a>
+                        </li>
                 </div>
             </div>
 
-
-            <nav class="navbar  navSearch">
-                <div class="container-fluid">
-                    <div class="navbar-brand textoSearch"></div>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2 labelSearch" type="search" placeholder="Que estás buscando?"
-                            aria-label="Search">
-                        <button class="btn btn-outline-success botonSearch textoSearch labelSearch"
-                            type="submit">Buscar</button>
-                    </form>
-                </div>
-            </nav>
-
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle dropdownClass" type="button" id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Mi Cuenta</a></li>
-                    <li><a class="dropdown-item" href="#">Carrito</a></li>
-                </ul>
-            </div>
-
-
-            <!-- <div class="cajaHeader">
-            <h2>Envío gratis a todo el país - Hasta 6 cuotas sin interés</h2>
-        </div>
-        <div class="cajaHeader">
-            <a href="#">Mi cuenta</a>
-        </div>
-
-        <div class="cajaHeader"> <a href="#">Carrito</a>
-        </div> -->
         </nav>
+        <div class="container-fluid">
+            <nav class="navbar navSearch">
+                <div class="navbar-brand textoSearch"></div>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 labelSearch" type="search" placeholder="Que estás buscando?"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success botonSearch textoSearch labelSearch"
+                        type="submit">Buscar</button>
+                </form>
+            </nav>
+        </div>
+
     </header>
 
 
-    <!-- <nav class="cajaHeaderNav">
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/destacados.html">Destacados</a></li>
-            <li><a href="../pages/ubicacion.html">Ubicación</a></li>
-            <li><a class="aContacto" href="../pages/contacto.html">Contacto</a></li>
-            <li><a href="../pages/fundas.html">Fundas</a></li>
-        </ul>
-    </nav> -->
-
+    <div class="info">
+        <h2 class="text-center d-block tituloNav mt-2 mb-2">♥ Envío gratis a todo el país - 6 cuotas sin interés ♥
+        </h2>
+    </div>
 
     <!-- Formulario de contacto -->
 
 
-    <main class="formulario">
-        <form>
+    <main class="formulario container-fluid">
+
+        <form class="col-lg-6 col-sm-12">
             <fieldset>
                 <legend class="tituloFormulario">Dejanos tu consulta!</legend>
                 <p class="parrafoForm">En breve un asesor comercial se estará contactando con vos</p>
@@ -123,69 +106,143 @@
                 <label for="Consulta">Consulta</label>
                 <input id="Consulta" type="text" placeholder="Dejanos tu consulta!">
                 <br><br>
-
                 <input type="submit">
                 <input type="reset" value="Borrar" name="" id="">
             </fieldset>
+
         </form>
+
+        <section class="cajaUbicacion row">
+            <div class="col-lg-6 col-sm-12">
+                <h2 class="tituloUbicacion">Encontranos en:</h2>
+            </div>
+            <div><iframe class="mapaDos"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.00196323258!2d-58.413043884591794!3d-34.604111865026326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8c901cefa7%3A0x2bf1c86478d6f525!2sObelisco!5e0!3m2!1ses-419!2sar!4v1650333594756!5m2!1ses-419!2sar"
+                    width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div>
+                <h3 class="direcUbic">Obelisco - CABA</h3>
+            </div>
+        </section>
+
     </main>
 
+    <div class="botonInstagram row">
+        <h3 class="tituloBoton col-lg-12 col-sm-12"><img class="logoUno" src="../img/logo-insta.png" alt="logo-insta">
+            @shallow.cases</h3>
+        <h3 class="tituloBoton col-lg-12 col-sm-12">Estamos en Instagram</h3>
+        <a class="botonInstaDos col-lg-12 col-sm-12" href="https://www.instagram.com/shallow.cases"
+            target="_blank"><button type="button" class="btn btn-secondary botonInsta px-4 mb-2">Seguinos</button></a>
 
+    </div>
 
+    <!-- Preguntas frecuentes -->
 
-    <!-- Ubicación -->
-
-    <section class="ubicacion">
-        <div>
-            <h2 class="tituloUbicacion">Donde estamos ubicados?</h2>
-            <p>Estamos en Villa Ortuzar, CABA! Consultanos dirección por privado</p>
-            <div class="mapa"><iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.00196323258!2d-58.413043884591794!3d-34.604111865026326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8c901cefa7%3A0x2bf1c86478d6f525!2sObelisco!5e0!3m2!1ses-419!2sar!4v1650333594756!5m2!1ses-419!2sar"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-
+    <div class="accordion accordion-flush acordionItem col-lg-12" id="accordionFlushExample">
+        <div class="accordion-item acordionItem">
+            <h2 class="text-center mt-2 mb-2">Preguntas Frecuentes</h2>
+            <h2 class="accordion-header acordionItem" id="flush-headingOne">
+                <button class="accordion-button collapsed acordionItem acordionTxt" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                    aria-controls="flush-collapseOne">
+                    ¿Cómo realizo una compra?
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse acordionItem"
+                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body acordionItem">Una vez que elegis los productos que quieras, seleccionas
+                    <code>Agregar al carrito.</code>Luego, vas a tu carrito y seguis los pasos de compra!</div>
+            </div>
         </div>
+        <div class="accordion-item acordionItem">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed acordionItem acordionTxt" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                    aria-controls="flush-collapseTwo">
+                    ¿Cómo rastreo mi envío?
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Cuando realices la compra, te va a llegar un email con un link para que
+                    puedas realizar el seguimiento del pedido! Cualquier duda contactanos al 1155664488 o por mail a
+                    shallowcases@gmail.com</div>
+            </div>
+        </div>
+        <div class="accordion-item acordionItem">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed acordionItem acordionTxt" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                    aria-controls="flush-collapseThree">
+                    ¿Qué métodos de pago aceptan?
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Aceptamos todas las tarjetas de débito y crédito! Con tarjetas bancarias
+                    tenes hasta 6 cuotas sin interés!</div>
+            </div>
+        </div>
+    </div>
 
-    </section>
 
     <!-- NEWSLETTER -->
 
     <div class="cajaNewsletter">
-        <p class="caja itemNewsletter">Suscribite a nuestro Newsletter y conocé todas las novedades!</p>
-        <form class="form-floating">
-            <input type="email" class="form-control" id="floatingInputValue" placeholder="nombre@ejemplo.com" value="">
-            <label for="floatingInputValue">Ingresá tu mail</label>
-            <input type="submit">
-            <input type="reset" value="Borrar" name="" id="">
-        </form>
-        <!-- <form class="caja itemNewsletter">
+        <p class="caja itemNewsletter tituloNews">♦ Suscribite a nuestro Newsletter y conocé todas las novedades! ♦</p>
+        <form class="caja itemNewsletter">
             <label for="Suscribite"></label>
             <input id="Suscribite" type="text" placeholder="Ingresá tu mail">
             <input type="submit">
             <input type="reset" value="Borrar" name="" id="">
-        </form> -->
+        </form>
+
 
     </div>
 
 
     <!-- CONTACTANOS -->
 
-    <section class="contactanos">
-        <a href="../pages/contacto.html">
-            <h2 class="tituloContacto">Contactanos</h2>
-        </a>
-        <div class="cajitaContacto">
+    <section class="contactanos container-fluid">
 
-            <p>Tel: 11277777</p>
-            <p>Ubicación: Villa Ortuzar, CABA</p>
-            <p>Mail: shallowcases@gmail.com</p>
+        <div class="cajitaContactoUno col-lg-3 col-sm-6">
+            <h2 class="tituloContacto mt-2">Menu</h2>
+            <ul class="menuContacto">
+                <li><a class="item" href="../index.html">Inicio</a></li>
+                <li><a class="item" href="../pages/fundas.html">Fundas</a></li>
+                <li><a class="item" href="../pages/destacados.html">Destacados</a></li>
+                <li><a class="item" href="../pages/contacto.html">Contacto</a></li>
+            </ul>
 
         </div>
 
-        <div class="cajitaContacto">
-            <h2>Sigamos conectados</h2>
-            <a class="caja item" href="http://www.instagram.com/shallow.cases" target="blank">Instagram</a>
-            <a class="caja item" href="http://www.instagram.com/shallow.cases" target="blank">Facebook</a>
+        <div class="col-lg-3 col-sm-6">
+            <a href="../pages/contacto.html">
+                <h2 class="tituloContacto">Contacto</h2>
+            </a>
+            <ul class="menuContactoDos">
+                <li>Tel: 115678910</li>
+                <li>Ubicación: Obelisco CABA</li>
+                <li>shallowcases@gmail.com</li>
+            </ul>
+        </div>
+
+        <div class="cajitaContactoUno col-lg-3 col-sm-6">
+            <h2 class="tituloContacto">Sigamos conectados</h2>
+            <a class="caja item" href="http://www.instagram.com/shallow.cases" target="blank"><img class="logoUno"
+                    src="../img/logo-insta.png" alt="logo instagram">Instagram</a>
+            <a class="caja item" href="http://www.instagram.com/shallow.cases" target="blank"><img class="logoUno"
+                    src="../img/logo-fb.png" alt="logo facebook">Facebook</a>
+            <a class="caja item" href="http://www.instagram.com/shallow.cases" target="blank"><img class="logoUno"
+                    src="../img/logo-gmail.png" alt="logo gmail">Email</a>
+            <a class="caja item" href="http://www.instagram.com/shallow.cases" target="blank"><img class="logoUno"
+                    src="../img/logo-wasap.png" alt="logo whatsapp">WhatsApp</a>
+        </div>
+
+        <div class="cajitaContactoUno col-lg-3 col-sm-6">
+            <h2 class="tituloContacto">Ayuda</h2>
+            <a class="caja item" href="#">¿Cómo comprar?</a>
+            <a class="caja item" href="#">Dejanos tu sugerencia!</a>
         </div>
 
 
@@ -197,7 +254,7 @@
 
     <footer>
 
-        <p>Shallow Cases <strong>Todos los derechos reservados</strong></p>
+        <p>♥ Shallow Cases ♥ <strong>Todos los derechos reservados</strong></p>
 
     </footer>
 

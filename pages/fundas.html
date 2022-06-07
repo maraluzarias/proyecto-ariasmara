@@ -24,7 +24,7 @@
     <div class="padreGridFundas">
 
         <header class="encabezado">
-            <div>
+            <div class="logo">
                 <a href="../index.html"><img class="imagenLogo" id="logo" src="../img/favicon.png" alt="Logo"></a>
             </div>
             <h1 class="tituloPrincipal">Shallow Cases</h1>
@@ -38,135 +38,455 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item ">
-                                <a class="nav-link textoNav active" aria-current="page" href="../index.html">Inicio</a>
+                                <a class="nav-link textoNav" aria-current="page" href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link textoNav active" aria-current="page"
+                                <a class="nav-link textoNav" aria-current="page"
                                     href="../pages/destacados.html">Destacados</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link textoNav" href="../pages/ubicacion.html">Ubicación</a>
+                                <a class="nav-link textoNav" href="../pages/accesorios.html">Accesorios</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link textoNav" href="../pages/fundas.html">Fundas</a>
-                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle textoNav" href="#" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Fundas</a>
+                                <ul class="dropdown-menu botonIndex" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item botonIndexDos" href="../pages/fundas.html">Iphone</a>
+                                    </li>
+                                    <li><a class="dropdown-item botonIndexDos" href="../pages/fundas.html">Samsung</a>
+                                    </li>
+                                    <li><a class="dropdown-item botonIndexDos" href="../pages/fundas.html">Motorola</a>
+                                    </li>
+
+                                </ul>
                             <li class="nav-item">
                                 <a class="nav-link textoNav" href="../pages/contacto.html">Contacto</a>
                             </li>
-                        </ul>
+                            <li class="nav-item">
+                                <a class="nav-link textoNav" href="#">Carrito</a>
+                            </li>
                     </div>
                 </div>
 
-
-                <nav class="navbar  navSearch">
-                    <div class="container-fluid">
-                        <div class="navbar-brand textoSearch"></div>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2 labelSearch" type="search" placeholder="Que estás buscando?"
-                                aria-label="Search">
-                            <button class="btn btn-outline-success botonSearch textoSearch labelSearch"
-                                type="submit">Buscar</button>
-                        </form>
-                    </div>
-                </nav>
-
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle dropdownClass" type="button"
-                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Mi Cuenta</a></li>
-                        <li><a class="dropdown-item" href="#">Carrito</a></li>
-                    </ul>
-                </div>
-                <!-- <div class="cajaHeader">
-                <h2>Envío gratis a todo el país - Hasta 6 cuotas sin interés</h2>
-            </div>
-            <div class="cajaHeader">
-                <a href="#">Mi cuenta</a>
-            </div>
-
-            <div class="cajaHeader"> <a href="#">Carrito</a>
-            </div> -->
             </nav>
+            <div class="container-fluid">
+                <nav class="navbar navSearch">
+                    <div class="navbar-brand textoSearch"></div>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 labelSearch" type="search" placeholder="Que estás buscando?"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success botonSearch textoSearch labelSearch"
+                            type="submit">Buscar</button>
+                    </form>
+                </nav>
+            </div>
+
         </header>
 
-
-        <!-- <nav class="cajaHeaderNav">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/destacados.html">Destacados</a></li>
-                <li><a href="../pages/ubicacion.html">Ubicación</a></li>
-                <li><a class="aContacto" href="../pages/contacto.html">Contacto</a></li>
-                <li><a href="../pages/fundas.html">Fundas</a></li>
-            </ul>
-        </nav> -->
-
-
-        <div class="fundas">
-            <h2 class="tituloFundas">Fundas</h2>
-
-            <div class="cajitaFundas">
-                <h3 class="tituloFundasIndividual">iPhone X</h3>
-            </div>
-            <div><img class="funda" src="../img/funda-iphone-x.jpg" alt="funda para iphone X"></div>
-
-
-            <div class="cajitaFundas">
-                <h3 class="tituloFundasIndividual">Samsung</h3>
-            </div>
-            <div><img class="funda" src="../img/funda-samsung.jpg" alt="funda para Samsung"></div>
-
-
-            <div class="cajitaFundas">
-                <h3 class="tituloFundasIndividual">Motorola</h3>
-            </div>
-            <div><img class="funda" src="../img/funda-motorola.jpeg" alt="funda para Motorola"></div>
+        <div class="info">
+            <h2 class="text-center d-block tituloNav mt-2 mb-2">♥ Envío gratis a todo el país - 6 cuotas sin interés ♥
+            </h2>
         </div>
 
+        <main class="container-fluid fundas">
+            <h2 class="col-lg-12 tituloFundasIndividual">Fundas</h2>
+            <div class="dropdown mb-3 d-block">
+                <button class="btn btn-secondary dropdown-toggle botonFundas" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Ordenar por
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Mas Vendido</a></li>
+                    <li><a class="dropdown-item" href="#">A a Z</a></li>
+                    <li><a class="dropdown-item" href="#">Precio: menor a mayor</a></li>
+                    <li><a class="dropdown-item" href="#">Silicone Case</a></li>
+                    <li><a class="dropdown-item" href="#">Silicone Rainbow</a></li>
+                    <li><a class="dropdown-item" href="#">Glitter</a></li>
+                    <li><a class="dropdown-item" href="#">Marmol</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="card col-lg-3 rounded mx-auto d-block mt-2 fundasCard" style="width: 18rem" ;>
+                    <a href="#"><img src="../img/silicone-1.jpg" class="card-img-top mt-2 imgFundas"
+                            alt="funda-silicona"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Silicone Case (Blanco)</h4>
+                    </div>
+                    <div>
+                        <h2>$1050</h2>
+                        <p>6 cuotas sin interés de $175</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link estiloLink">Agregar al carrito</a>
+                        <a href="#" class="card-link estiloLink">Ver</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 rounded mx-auto d-block mt-2 fundasCard" style="width: 18rem;">
+                    <a href="#"><img src="../img/silicone-2.png" class="card-img-top mt-2 imgFundas"
+                            alt="funda-silicona"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Silicone Case (Yellow)</h4>
+                    </div>
+                    <div>
+                        <h2>$1050</h2>
+                        <p>6 cuotas sin interés de $175</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link estiloLink">Agregar al carrito</a>
+                        <a href="#" class="card-link estiloLink">Ver</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 rounded mx-auto d-block mt-2 fundasCard" style="width: 18rem;">
+                    <a href="#"><img src="../img/silicone-3.jpeg" class="card-img-top mt-2 imgFundas"
+                            alt="funda-silicona"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Silicone Case (Nude)</h4>
+                    </div>
+                    <div>
+                        <h2>$1050</h2>
+                        <p>6 cuotas sin interés de $175</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link estiloLink">Agregar al carrito</a>
+                        <a href="#" class="card-link estiloLink">Ver</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 rounded mx-auto d-block mt-2 fundasCard" style="width: 18rem;">
+                    <a href="#"><img src="../img/silicone-4.png" class="card-img-top mt-2 imgFundas"
+                            alt="funda-silicona"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Silicone Case (Coral)</h4>
+                    </div>
+                    <div>
+                        <h2>$1050</h2>
+                        <p>6 cuotas sin interés de $175</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link estiloLink">Agregar al carrito</a>
+                        <a href="#" class="card-link estiloLink">Ver</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 rounded mx-auto d-block mt-2 fundasCard" style="width: 18rem;">
+                    <a href="#"><img src="../img/silicone-5.png" class="card-img-top mt-2 imgFundas"
+                            alt="funda-silicona"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Silicone Case (Rojo)</h4>
+                    </div>
+                    <div>
+                        <h2>$1050</h2>
+                        <p>6 cuotas sin interés de $175</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link estiloLink">Agregar al carrito</a>
+                        <a href="#" class="card-link estiloLink">Ver</a>
+                    </div>
+                </div>
 
 
+                <div class="card col-lg-3 rounded mx-auto d-block mt-2 fundasCard" style="width: 18rem;">
+                    <a href="#"><img src="../img/silicone-6.jpeg" class="card-img-top mt-2 imgFundas"
+                            alt="funda-silicona"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Silicone Case (Oliva)</h4>
+                    </div>
+                    <div>
+                        <h2>$1050</h2>
+                        <p>6 cuotas sin interés de $175</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link estiloLink">Agregar al carrito</a>
+                        <a href="#" class="card-link estiloLink">Ver</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 rounded mx-auto d-block mt-2 fundasCard" style="width: 18rem;">
+                    <a href="#"><img src="../img/silicone-7.jpeg" class="card-img-top mt-2 imgFundas"
+                            alt="funda-silicona"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Silicone Case (Celeste)</h4>
+                    </div>
+                    <div>
+                        <h2>$1050</h2>
+                        <p>6 cuotas sin interés de $175</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link estiloLink">Agregar al carrito</a>
+                        <a href="#" class="card-link estiloLink">Ver</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 rounded mx-auto d-block mt-2 fundasCard" style="width: 18rem;">
+                    <a href="#"><img src="../img/silicone-8.jpeg" class="card-img-top mt-2 imgFundas"
+                            alt="funda-silicona"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Silicone Case (Purple)</h4>
+                    </div>
+                    <div>
+                        <h2>$1050</h2>
+                        <p>6 cuotas sin interés de $175</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link estiloLink">Agregar al carrito</a>
+                        <a href="#" class="card-link estiloLink">Ver</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 rounded mx-auto d-block mt-2 fundasCard" style="width: 18rem;">
+                    <a href="#"><img src="../img/siliconerainbow1.jpeg" class="card-img-top mt-2 imgFundas"
+                            alt="funda-silicona"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Silicone Rainbow (Multi)</h4>
+                    </div>
+                    <div>
+                        <h2>$1050</h2>
+                        <p>6 cuotas sin interés de $175</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link estiloLink">Agregar al carrito</a>
+                        <a href="#" class="card-link estiloLink">Ver</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 rounded mx-auto d-block mt-2 fundasCard" style="width: 18rem;">
+                    <a href="#"><img src="../img/siliconerainbow2.jpeg" class="card-img-top mt-2 imgFundas"
+                            alt="funda-silicona"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Silicone Case (Pink)</h4>
+                    </div>
+                    <div>
+                        <h2>$1050</h2>
+                        <p>6 cuotas sin interés de $175</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link estiloLink">Agregar al carrito</a>
+                        <a href="#" class="card-link estiloLink">Ver</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 rounded mx-auto d-block mt-2 fundasCard" style="width: 18rem;">
+                    <a href="#"><img src="../img/siliconerainbow3.jpeg" class="card-img-top mt-2 imgFundas"
+                            alt="funda-silicona"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Silicone Rainbow (Blue)</h4>
+                    </div>
+                    <div>
+                        <h2>$1050</h2>
+                        <p>6 cuotas sin interés de $175</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link estiloLink">Agregar al carrito</a>
+                        <a href="#" class="card-link estiloLink">Ver</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 rounded mx-auto d-block mt-2 fundasCard" style="width: 18rem;">
+                    <a href="#"><img src="../img/siliconerainbow4.jpeg" class="card-img-top mt-2 imgFundas"
+                            alt="funda-silicona"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Silicone Rainbow (Green)</h4>
+                    </div>
+                    <div>
+                        <h2>$1050</h2>
+                        <p>6 cuotas sin interés de $175</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link estiloLink">Agregar al carrito</a>
+                        <a href="#" class="card-link estiloLink">Ver</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 rounded mx-auto d-block mt-2 fundasCard" style="width: 18rem;">
+                    <a href="#"><img src="../img/glitter1.jpg" class="card-img-top mt-2 imgFundas"
+                            alt="funda-glitter"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Glitter (White)</h4>
+                    </div>
+                    <div>
+                        <h2>$1050</h2>
+                        <p>6 cuotas sin interés de $175</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link estiloLink">Agregar al carrito</a>
+                        <a href="#" class="card-link estiloLink">Ver</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 rounded mx-auto d-block mt-2 fundasCard" style="width: 18rem;">
+                    <a href="#"><img src="../img/glitter2.jpeg" class="card-img-top mt-2 imgFundas"
+                            alt="funda-glitter"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Glitter (Black)</h4>
+                    </div>
+                    <div>
+                        <h2>$1050</h2>
+                        <p>6 cuotas sin interés de $175</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link estiloLink">Agregar al carrito</a>
+                        <a href="#" class="card-link estiloLink">Ver</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 rounded mx-auto d-block mt-2 fundasCard" style="width: 18rem;">
+                    <a href="#"><img src="../img/marmol1.jpeg" class="card-img-top mt-2 imgFundas"
+                            alt="funda-marmol"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Marmol (Black)</h4>
+                    </div>
+                    <div>
+                        <h2>$1050</h2>
+                        <p>6 cuotas sin interés de $175</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link estiloLink">Agregar al carrito</a>
+                        <a href="#" class="card-link estiloLink">Ver</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 rounded mx-auto d-block mt-2 fundasCard" style="width: 18rem;">
+                    <a href="#"><img src="../img/marmol2.jpeg" class="card-img-top mt-2 imgFundas"
+                            alt="funda-marmol"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Marmol (White)</h4>
+                    </div>
+                    <div>
+                        <h2>$1050</h2>
+                        <p>6 cuotas sin interés de $175</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link estiloLink">Agregar al carrito</a>
+                        <a href="#" class="card-link estiloLink">Ver</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 rounded mx-auto d-block mt-2 fundasCard" style="width: 18rem;">
+                    <a href="#"><img src="../img/minnie.jpeg" class="card-img-top mt-2 imgFundas"
+                            alt="funda-minnie"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Funda Minnie</h4>
+                    </div>
+                    <div>
+                        <h2>$1050</h2>
+                        <p>6 cuotas sin interés de $175</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link estiloLink">Agregar al carrito</a>
+                        <a href="#" class="card-link estiloLink">Ver</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 rounded mx-auto d-block mt-2 fundasCard" style="width: 18rem;">
+                    <a href="#"><img src="../img/gomitas.jpeg" class="card-img-top mt-2 imgFundas"
+                            alt="funda-gomitas"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Funda gomitas</h4>
+                    </div>
+                    <div>
+                        <h2>$1050</h2>
+                        <p>6 cuotas sin interés de $175</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link estiloLink">Agregar al carrito</a>
+                        <a href="#" class="card-link estiloLink">Ver</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 rounded mx-auto d-block mt-2 fundasCard" style="width: 18rem;">
+                    <a href="#"><img src="../img/verde.jpeg" class="card-img-top mt-2 imgFundas" alt="funda-verde"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Cuadrille Verde</h4>
+                    </div>
+                    <div>
+                        <h2>$1050</h2>
+                        <p>6 cuotas sin interés de $175</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link estiloLink">Agregar al carrito</a>
+                        <a href="#" class="card-link estiloLink">Ver</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 rounded mx-auto d-block mt-2 fundasCard" style="width: 18rem;">
+                    <a href="#"><img src="../img/snakers.jpeg" class="card-img-top mt-2 imgFundas"
+                            alt="funda-snakers"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Funda Snakers</h4>
+                    </div>
+                    <div>
+                        <h2>$1050</h2>
+                        <p>6 cuotas sin interés de $175</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link estiloLink">Agregar al carrito</a>
+                        <a href="#" class="card-link estiloLink">Ver</a>
+                    </div>
+                </div>
+
+            </div>
+        </main>
 
 
         <!-- NEWSLETTER -->
 
         <div class="cajaNewsletter">
-            <p class="caja itemNewsletter">Suscribite a nuestro Newsletter y conocé todas las novedades!</p>
-            <form class="form-floating">
-                <input type="email" class="form-control" id="floatingInputValue" placeholder="nombre@ejemplo.com"
-                    value="">
-                <label for="floatingInputValue">Ingresá tu mail</label>
-                <input type="submit">
-                <input type="reset" value="Borrar" name="" id="">
-            </form>
-            <!-- <form class="caja itemNewsletter">
+            <p class="caja itemNewsletter tituloNews">♦ Suscribite a nuestro Newsletter y conocé todas las novedades! ♦
+            </p>
+            <form class="caja itemNewsletter">
                 <label for="Suscribite"></label>
                 <input id="Suscribite" type="text" placeholder="Ingresá tu mail">
                 <input type="submit">
                 <input type="reset" value="Borrar" name="" id="">
-            </form> -->
+            </form>
+
 
         </div>
 
 
         <!-- CONTACTANOS -->
 
-        <section class="contactanos">
-            <a href="../pages/contacto.html">
-                <h2 class="tituloContacto">Contactanos</h2>
-            </a>
-            <div class="cajitaContacto">
+        <section class="contactanos container-fluid">
 
-                <p>Tel: 11277777</p>
-                <p>Ubicación: Villa Ortuzar, CABA</p>
-                <p>Mail: shallowcases@gmail.com</p>
+            <div class="cajitaContactoUno col-lg-3 col-sm-6">
+                <h2 class="tituloContacto mt-2">Menu</h2>
+                <ul class="menuContacto">
+                    <li><a class="item" href="../index.html">Inicio</a></li>
+                    <li><a class="item" href="../pages/fundas.html">Fundas</a></li>
+                    <li><a class="item" href="../pages/destacados.html">Destacados</a></li>
+                    <li><a class="item" href="../pages/contacto.html">Contacto</a></li>
+                </ul>
 
             </div>
 
-            <div class="cajitaContacto">
-                <h2>Sigamos conectados</h2>
-                <a class="caja item" href="http://www.instagram.com/shallow.cases" target="blank">Instagram</a>
-                <a class="caja item" href="http://www.instagram.com/shallow.cases" target="blank">Facebook</a>
+            <div class="col-lg-3 col-sm-6">
+                <h2 class="tituloContacto">Contacto</h2>
+                <ul class="menuContactoDos">
+                    <li>Tel: 115678910</li>
+                    <li>Ubicación: Obelisco CABA</li>
+                    <li>shallowcases@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="cajitaContactoUno col-lg-3 col-sm-6">
+                <h2 class="tituloContacto">Sigamos conectados</h2>
+                <a class="caja item" href="http://www.instagram.com/shallow.cases" target="blank"><img class="logoUno"
+                        src="../img/logo-insta.png" alt="logo instagram">Instagram</a>
+                <a class="caja item" href="http://www.instagram.com/shallow.cases" target="blank"><img class="logoUno"
+                        src="../img/logo-fb.png" alt="logo facebook">Facebook</a>
+                <a class="caja item" href="http://www.instagram.com/shallow.cases" target="blank"><img class="logoUno"
+                        src="../img/logo-gmail.png" alt="logo gmail">Email</a>
+                <a class="caja item" href="http://www.instagram.com/shallow.cases" target="blank"><img class="logoUno"
+                        src="../img/logo-wasap.png" alt="logo whatsapp">WhatsApp</a>
+            </div>
+
+            <div class="cajitaContactoUno col-lg-3 col-sm-6">
+                <h2 class="tituloContacto">Ayuda</h2>
+                <a class="caja item" href="#">¿Cómo comprar?</a>
+                <a class="caja item" href="#">Dejanos tu sugerencia!</a>
             </div>
 
 
@@ -178,7 +498,7 @@
 
         <footer>
 
-            <p>Shallow Cases <strong>Todos los derechos reservados</strong></p>
+            <p>♥ Shallow Cases ♥ <strong>Todos los derechos reservados</strong></p>
 
         </footer>
 
