@@ -1,11 +1,4 @@
 @charset "UTF-8";
-/*EXTEND*/
-.tituloCajita, .tituloCajitaExtend {
-  color: black; }
-
-.tituloCajitaExtend {
-  font-size: 1rem; }
-
 /*MIXIN ANIMACIÓN*/
 .info {
   animation: fade 3s linear 1000; }
@@ -20,6 +13,17 @@
 
 .tituloNews {
   animation: fade 3s linear 1000; }
+
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+.tituloFundasIndividual {
+  animation: fade 1.5s linear 1000; }
 
 @keyframes fade {
   0% {
@@ -72,7 +76,7 @@ h1 {
   background-color: #ffe5d9;
   width: auto;
   display: flex;
-  flex-direction: inline;
+  flex-direction: row;
   justify-content: space-around;
   grid-area: contactanos; }
 
@@ -89,14 +93,14 @@ h1 {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
-  margin: 0%;
-  padding: 0%; }
+  margin: 0;
+  padding: 0; }
 
 .menuContactoDos {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
-  padding: 0%; }
+  padding: 0; }
 
 .tituloContacto {
   font-size: 1rem;
@@ -136,12 +140,17 @@ a {
   text-decoration: none;
   color: #FF4089; }
 
-.tituloCajita, .tituloCajitaExtend {
-  color: black; }
+.tituloCajita {
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase; }
+
+.tituloCajitaDos {
+  font-size: 1rem; }
 
 .servicios {
   background-color: #ffc8dd;
-  margin-top: 50px;
+  margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
   justify-content: space-around;
@@ -152,11 +161,12 @@ a {
 
 .cajita {
   margin: 20px;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid black;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 3px 3px 3px;
-  text-align: center; }
+  text-align: center;
+  font-size: 1rem; }
 
 footer {
   /*height: auto;*/
@@ -193,8 +203,10 @@ h2 {
   .cases:hover {
     filter: grayscale(50%); }
 
-.carrusel:hover {
-  filter: grayscale(70%); }
+.carrusel {
+  border: 1px solid #FF4089; }
+  .carrusel:hover {
+    filter: grayscale(70%); }
 
 .tituloCases {
   font-weight: bold; }
@@ -363,7 +375,6 @@ h2 {
 
 .formulario {
   background-color: #d1b3c4;
-  height: 500px;
   margin-bottom: 10px;
   padding: 20px 20px;
   display: flex;
@@ -405,7 +416,9 @@ label {
 .tituloFundasIndividual {
   color: #FF4089;
   text-align: center;
-  margin: 5px; }
+  margin: 5px;
+  margin-top: 20px;
+  font-size: 3rem; }
 
 .botonFundas {
   background-color: #fae1dd;
@@ -425,6 +438,7 @@ header {
 .cajitasConImagenes {
   grid-area: cajitasImg; }
 
+/*Vista movil*/
 @media (max-width: 700px) {
   .padreGrid {
     display: grid;
@@ -454,7 +468,7 @@ header {
 .contenidoPrincipal {
   grid-area: contenidoP; }
 
-@media (min-width: 300px) and (max-width: 700px) {
+@media (min-width: 300px) and (max-width: 699px) {
   .padreGridContacto {
     display: grid;
     grid-auto-columns: 1fr 1fr 1fr 1fr;
@@ -495,3 +509,53 @@ header {
   .accesorios {
     display: grid;
     grid-area: accesorios; } }
+
+/*Vista tablet*/
+@media (min-width: 700px) and (max-width: 1023px) {
+  .padreGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1px;
+    grid-template-areas: "header header header header" "nav nav nav nav" "info info info info" "contenidoP contenidoP contenidoP contenidoP" "carrusel carrusel carrusel carrusel" "menuP menuP menuP menuP" "menuP menuP menuP menuP" "cajitasImg cajitasImg cajitasImg cajitasImg" "servicios servicios servicios servicios" "servicios servicios servicios servicios" "newsletter newsletter newsletter newsletter" "contactanos contactanos contactanos contactanos" "footer footer footer footer"; }
+  .contactanos {
+    display: flex;
+    width: 100%; }
+  .padreGridAccesorios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1px;
+    grid-template-areas: "header header header header" "nav nav nav nav" "info info info info" "accesorios accesorios accesorios accesorios" "accesorios accesorios accesorios accesorios" "newsletter newsletter newsletter newsletter" "contactanos contactanos contactanos contactanos" "footer footer footer footer"; }
+  .accesorios {
+    display: grid;
+    grid-area: accesorios; }
+  .info {
+    display: grid;
+    grid-area: info; }
+  .padreGridFundas {
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1px;
+    grid-template-areas: "header header header header" "nav nav nav nav" "info info info info" "fundas fundas fundas fundas" "fundas fundas fundas fundas" "fundas fundas fundas fundas" "newsletter newsletter newsletter newsletter" "contactanos contactanos contactanos contactanos" "footer footer footer footer"; }
+  .padreGridContacto {
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1px;
+    grid-template-areas: "header header header header" "nav nav nav nav" "info info info info" "formulario formulario formulario formulario" "formulario formulario formulario formulario" "formulario formulario formulario formulario" "boton boton boton boton" "acordion acordion acordion acordion" "newsletter newsletter newsletter newsletter" "newsletter newsletter newsletter newsletter" "contactanos contactanos contactanos contactanos" "footer footer footer footer"; }
+  .formulario {
+    display: grid;
+    grid-area: formulario; }
+  .cajaUbicacion {
+    display: none; }
+  .info {
+    display: grid;
+    grid-area: info; }
+  .botonInstagram {
+    display: grid;
+    grid-area: boton; }
+  .accordion {
+    display: grid;
+    grid-area: acordion; } }

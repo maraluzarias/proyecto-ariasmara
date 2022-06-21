@@ -2,7 +2,7 @@
 	background-color: #ffe5d9;
 	width: auto;
 	display: flex;
-	flex-direction: inline;
+	flex-direction: row;
 	justify-content: space-around;
 	grid-area: contactanos;
 }
@@ -19,14 +19,14 @@
 	display: flex;
 	flex-direction: column;
 	font-size: 1rem;
-	margin: 0%;
-	padding: 0%;
+	margin: 0;
+	padding: 0;
 }
 .menuContactoDos {
 	display: flex;
 	flex-direction: column;
 	font-size: 1rem;
-	padding: 0%;
+	padding: 0;
 }
 .tituloContacto {
 	font-size: 1rem;

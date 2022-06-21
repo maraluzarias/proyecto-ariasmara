@@ -1,9 +1,0 @@
-/*EXTEND*/
-.tituloCajita {
-	color: black;
-}
-
-.tituloCajitaExtend {
-    @extend .tituloCajita;
-    font-size: 1rem;
-}

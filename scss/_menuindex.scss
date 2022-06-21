@@ -22,10 +22,16 @@ a {
 }
 .tituloCajita {
 	color: black;
+	font-size: 20px;
+	text-transform: uppercase;
+
+}
+.tituloCajitaDos {
+	font-size: 1rem;
 }
 .servicios {
 	background-color: #ffc8dd;
-	margin-top: 50px;
+	margin-top: 10px;
 	margin-bottom: 10px;
 	display: flex;
 	justify-content: space-around;
@@ -36,9 +42,10 @@ a {
 }
 .cajita {
 	margin: 20px;
-	padding: 20px;
+	padding: 10px;
 	border: 1px solid black;
-	border-radius: 20px;
+	border-radius: 10px;
 	box-shadow: 3px 3px 3px;
 	text-align: center;
+	font-size: 1rem;
 }
