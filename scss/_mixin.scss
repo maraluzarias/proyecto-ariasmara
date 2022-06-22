@@ -9,7 +9,6 @@
         @content;
     }
 }
-
 .info{ 
     @include keyframes(fade){
        0%{
@@ -30,7 +29,6 @@
         @content;
     }
 }
-
 .tituloNews{ 
     @include keyframes(fade){
        0%{
@@ -44,26 +42,4 @@
       }
      }
    @include animate(fade, 3s, linear, 1000);
- }
-
-
- @mixin keyframes($tituloFundasIndividual){
-    @keyframes #{$tituloFundasIndividual}{
-        @content;
-    }
-}
-
-.tituloFundasIndividual{ 
-    @include keyframes(fade){
-       0%{
-       opacity: 0;
-       }
-      50%{
-       opacity: 0.5;
-       }
-      100%{
-       opacity: 1;
-      }
-     }
-   @include animate(fade, 1.5s, linear, 1000);
  }
